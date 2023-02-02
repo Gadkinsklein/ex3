@@ -4,15 +4,15 @@ public class Main {
     static Scanner myObj = new Scanner(System.in);  // Create a Scanner object
 
     public static void main(String[] args) {
-        System.out.println("Hello world!");
 
-        System.out.println("Enter username");
+
+
         double temp = collectInput();
-
-        double f2c = celsius(temp);
-
-        displayTemp(f2c);
-    }
+        while (temp>-460){
+            double f2c = celsius(temp);
+            displayTemp(f2c);
+            temp = collectInput();
+    }}
 
 
     static double collectInput() {
